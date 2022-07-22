@@ -10,7 +10,7 @@ const database = require("./config/database");
 
 const cors = require('cors');
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const userRoutes = require('./routes/userRoute');
 
