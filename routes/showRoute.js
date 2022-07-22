@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { updateShow, getShows, deleteShow, addShow } = require('../controllers/showController')
+const { updateShow, getShows, deleteShow, addShow } = require('../controllers/showController');
 
 const { isAuthenticatedUser } = require('../middleware/authMiddleware');
 

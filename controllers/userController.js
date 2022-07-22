@@ -16,7 +16,7 @@ exports.login = catchAsyncError(async (req, res, next) => {
         return res.status(200).json({
             success: true,
             token, user
-        })
+        });
     } else {
         const isMatch = await user.comparePassword(password);
 
@@ -30,6 +30,6 @@ exports.login = catchAsyncError(async (req, res, next) => {
             success: true,
             token,
             user
-        })
+        });
     }
 })
